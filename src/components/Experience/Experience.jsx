@@ -24,16 +24,30 @@ const Experience = () => (
             <ul className="space-y-2">
               <li className="flex items-center text-gray-300">
                 <span className="text-purple-400 mr-2">✓</span>
-                Configured and monitored Azure Infrastructure using Azure DevOps
-                and PaaS services
+                Agile Collaboration: Developed and managed CI/CD pipelines in
+                Azure DevOps, cutting deployment time by 30%
               </li>
               <li className="flex items-center text-gray-300">
                 <span className="text-purple-400 mr-2">✓</span>
-                Reduced deployment time by 30% through CI/CD implementation
+                Testing Automation: Automated report generation using Python &
+                ODBC, reducing report time from 2.5 hours to 10 minutesReduced
+                deployment time by 30% through CI/CD implementation
               </li>
               <li className="flex items-center text-gray-300">
                 <span className="text-purple-400 mr-2">✓</span>
-                Managed 40+ Kubernetes applications with accurate results
+                Cloud Implementation: Implemented ETL pipelines (ADF, Logic
+                Apps) to improve data efficiency by 20%
+              </li>
+              <li className="flex items-center text-gray-300">
+                <span className="text-purple-400 mr-2">✓</span>
+                Quality Assurance: Resolved 50+ P1 and P2 incidents using
+                ServiceNow with 95% SLA resolution rate, improving software
+                reliability
+              </li>
+              <li className="flex items-center text-gray-300">
+                <span className="text-purple-400 mr-2">✓</span>
+                System Optimization: Deployed Kubernetes for 40+ PRD apps,
+                enhancing performance monitoring via Azure App Insights
               </li>
             </ul>
           </div>

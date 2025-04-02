@@ -1,0 +1,150 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comprehensive Architectural Overview</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <style>
+            :root {
+                --primary-color: #3498db;
+                --secondary-color: #2ecc71;
+                --background-light: #f4f6f7;
+                --text-dark: #2c3e50;
+                --card-bg: #ffffff;
+                --border-radius: 12px;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Inter', sans-serif;
+                line-height: 1.6;
+                background-color: var(--background-light);
+                color: var(--text-dark);
+            }
+            .page {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .header {
+                text-align: center;
+                padding: 30px 0;
+                background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+                color: white;
+                border-radius: var(--border-radius);
+                margin-bottom: 30px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+            .header h1 {
+                font-weight: 600;
+                letter-spacing: -1px;
+                font-size: 2.5em;
+            }
+            .card {
+                background: var(--card-bg);
+                border-radius: var(--border-radius);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+                padding: 25px;
+                margin-bottom: 25px;
+                transition: all 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            }
+            .card h2 {
+                border-bottom: 3px solid var(--primary-color);
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                color: var(--primary-color);
+            }
+            .section-content {
+                background-color: #f8f9fa;
+                border-left: 4px solid var(--primary-color);
+                padding: 15px;
+                border-radius: 5px;
+            }
+            .section-content pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                font-family: 'Inter', monospace;
+            }
+            .file-composition {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 15px;
+            }
+            .file-type-tag {
+                background-color: var(--primary-color);
+                color: white;
+                padding: 5px 10px;
+                border-radius: 20px;
+                font-size: 0.9em;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            #file_type_chart {
+                width: 100%;
+                height: 400px;
+            }
+            @media (max-width: 768px) {
+                .page {
+                    padding: 10px;
+                }
+                .header h1 {
+                    font-size: 1.8em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="header">
+                <h1>🔍 Comprehensive Architectural Overview</h1>
+            </div>
+
+            <div class="card">
+                <h2>📊 Project File Composition</h2>
+                <div class="file-composition">
+                    <span class="file-type-tag"><strong>javascript</strong>: 10 (100.0%)</span>
+                </div>
+                <div id="file_type_chart"></div>
+            </div>
+
+            
+        </div>
+
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['File Type', 'Count'],
+                    ['javascript', 10]
+                ]);
+
+                var options = {
+                    title: 'Project File Type Distribution',
+                    backgroundColor: 'transparent',
+                    chartArea: {width: '80%', height: '70%'},
+                    legend: {position: 'right'},
+                    colors: ['#3498db', '#2ecc71', '#e74c3c', '#f39c12', '#9b59b6']
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('file_type_chart'));
+                chart.draw(data, options);
+            }
+        </script>
+    </body>
+    </html>
+    

@@ -35,6 +35,27 @@ const Projects = () => (
             ],
             technologies: ["CNN", "K-Means", "Transfer Learning"],
           },
+          {
+            title: " Auto Doc",
+            description:
+              "Developed an AI-driven documentation tool that transforms project files into technical documentation using CodeLlama via Ollama",
+            features: [
+              "Automated code analysis to scan project directories and extract architectural insights",
+              "Integrated tech stack identification to detect and document frameworks, libraries, and dependencies automatically",
+            ],
+            technologies: ["Python", "FastAPI", "Ollama", "CodeLlama"],
+          },
+          {
+            title: "Biryani Recipe Website",
+            description:
+              "React-based interactive recipe website for making Biryani",
+            features: [
+              "Dynamic recipe display with interactive cooking steps",
+              "Ingredient tracking and measurement details",
+              "Built-in timers for cooking steps",
+            ],
+            technologies: ["React", "JavaScript", "CSS"],
+          },
         ].map((project, index) => (
           <div
             key={index}
