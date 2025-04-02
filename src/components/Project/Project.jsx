@@ -2,11 +2,16 @@ import React from "react";
 import FadeInSection from "../Utilities/FadeInSection";
 
 const Projects = () => (
-  <section id="projects" className="py-20">
+  <section
+    id="projects"
+    className="py-20 bg-gradient-to-b from-gray-950 to-black"
+  >
     <div className="max-w-7xl mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center mb-16 text-purple-400">
-        Featured Projects
-      </h2>
+      <FadeInSection>
+        <h2 className="text-4xl font-bold text-center mb-16 text-white-400">
+          Personal Projects
+        </h2>
+      </FadeInSection>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {

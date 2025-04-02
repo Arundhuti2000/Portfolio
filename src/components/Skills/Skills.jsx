@@ -1,32 +1,81 @@
 import React from "react";
 import FadeInSection from "../Utilities/FadeInSection";
 
+const skillCategories = [
+  {
+    title: "Programming Languages",
+    skills: [
+      { name: "C#/.NET", logo: "/images/csharp.png" },
+      { name: "Python", logo: "/images/python.png" },
+      { name: "JavaScript", logo: "/images/javascript.png" },
+      { name: "HTML", logo: "/images/html.png" },
+      { name: "CSS", logo: "/images/css.png" },
+    ],
+  },
+  {
+    title: "Cloud Platforms",
+    skills: [
+      { name: "Azure", logo: "/images/azure.png" },
+      { name: "AWS", logo: "/images/aws.png" },
+      { name: "Kubernetes", logo: "/images/kubernetes.png" },
+      { name: "Azure DevOps", logo: "/images/devops.png" },
+    ],
+  },
+  {
+    title: "Data Analysis Tools",
+    skills: [{ name: "Power BI", logo: "/images/powerbi.png" }],
+  },
+  {
+    title: "Ticketing & Monitoring Tools",
+    skills: [
+      { name: "Service Now", logo: "/images/servicenow.png" },
+      { name: "Datadog", logo: "/images/datadog.png" },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      { name: "MySQL", logo: "/images/mysql.png" },
+      { name: "CassandraDB", logo: "/images/cassandra.png" },
+    ],
+  },
+];
+
+// Create a deduplicated list of skills
+const allSkills = Array.from(
+  new Map(
+    skillCategories.flatMap((category) =>
+      category.skills.map((skill) => [skill.name, skill])
+    )
+  ).values()
+);
+
 const Skills = () => (
-  <section id="skills" className="py-20">
+  <section
+    id="skills"
+    className="py-20 bg-gradient-to-b from-gray-950 to-black"
+  >
     <div className="max-w-7xl mx-auto px-4">
       <FadeInSection>
-        <h2 className="text-4xl font-bold text-center mb-16 text-purple-400">
+        <h2 className="text-4xl font-bold text-center mb-16 text-white-400">
           Skills
         </h2>
       </FadeInSection>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {[
-          { title: "Cloud & DevOps", skills: ["Azure", "Kubernetes", "AWS"] },
-          { title: "Programming", skills: ["Python", "JavaScript", "C#"] },
-          { title: "Data & Analytics", skills: ["SQL", "Power BI", "ETL"] },
-        ].map((category, index) => (
-          <FadeInSection key={index} delay={index * 200}>
-            <div className="p-6 bg-gray-800/50 rounded-lg transform transition-all duration-500 hover:scale-105 hover:bg-gray-800/70">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">
-                {category.title}
-              </h3>
-              <ul className="space-y-2">
-                {category.skills.map((skill, idx) => (
-                  <li key={idx} className="text-gray-300">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        {allSkills.map((skill, idx) => (
+          <FadeInSection key={`skill-${skill.name}`}>
+            <div className="bg-gray-900/80 bg-opacity-70 w-32 h-32 rounded-lg flex flex-col items-center justify-center p-4 border border-gray-800 transition-all duration-300 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20">
+              <div className="h-20 w-20 flex items-center justify-center">
+                <img
+                  src={skill.logo}
+                  // alt={skill.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              {/* <p className="text-center text-sm font-medium text-gray-300">
+                {skill.name}
+              </p> */}
             </div>
           </FadeInSection>
         ))}

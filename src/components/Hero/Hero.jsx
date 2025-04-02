@@ -38,7 +38,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center pt-16"
+      className="relative min-h-screen flex items-center pt-16 bg-gradient-to-b from-gray-950 to-black"
     >
       <DynamicBackground />
       <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
