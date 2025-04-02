@@ -77,7 +77,7 @@ const Experience = () => (
               </li>
               <li className="flex items-center text-gray-300">
                 <span className="text-purple-400 mr-2">✓</span>
-                Cloud Implementation: Integrated Apache Kafka with Azure Event
+                Cloud Implementation: Integrated Apache Kafka with Azure Events
                 Hubs for real-time data ingestion, handling 20,000 messages/sec
               </li>
             </ul>
