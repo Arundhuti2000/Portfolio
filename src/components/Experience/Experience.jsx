@@ -67,11 +67,18 @@ const Experience = () => (
             <ul className="space-y-2">
               <li className="flex items-center text-gray-300">
                 <span className="text-purple-400 mr-2">✓</span>
-                Led team of 5, completing project 20% ahead of schedule
+                Leadership: Led team of 5, completing project 20% ahead of
+                schedule while mentoring new hires for seamless onboarding
               </li>
               <li className="flex items-center text-gray-300">
                 <span className="text-purple-400 mr-2">✓</span>
-                Created comprehensive technical documentation
+                Quality Assurance: Created comprehensive technical documentation
+                and created Azure Dashboards for timely insights
+              </li>
+              <li className="flex items-center text-gray-300">
+                <span className="text-purple-400 mr-2">✓</span>
+                Cloud Implementation: Integrated Apache Kafka with Azure Event
+                Hubs for real-time data ingestion, handling 20,000 messages/sec
               </li>
             </ul>
           </div>
