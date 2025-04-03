@@ -40,10 +40,19 @@ const Header = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-900/95 p-4">
           <div className="flex flex-col space-y-4">
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="#skills">Skills</NavLink>
-            <NavLink href="#projects">Projects</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink onClick={() => handleButtonClick("home")}>Home</NavLink>
+            <NavLink onClick={() => handleButtonClick("experience")}>
+              Experience
+            </NavLink>
+            <NavLink onClick={() => handleButtonClick("skills")}>
+              Skills
+            </NavLink>
+            <NavLink onClick={() => handleButtonClick("projects")}>
+              Projects
+            </NavLink>
+            <NavLink onClick={() => handleButtonClick("contact")}>
+              Contact
+            </NavLink>
           </div>
         </div>
       )}
