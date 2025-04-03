@@ -31,21 +31,21 @@ const Experience = () => (
 
               <div className="mb-6">
                 <h4 className="text-xl text-gray-300 mb-4">
-                  Database Migration Tool
+                  DevOps & Data Engineering
                 </h4>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-300">
                     <span className="text-purple-400 mr-2 mt-1">•</span>
                     <span>
-                      Architected RESTful API using Data Movement Library, React
-                      & .NET for multi-terabyte database transfers
+                      Developed and maintained CI/CD pipelines in Azure DevOps,
+                      reducing deployment time by 30%
                     </span>
                   </li>
                   <li className="flex items-start text-gray-300">
                     <span className="text-purple-400 mr-2 mt-1">•</span>
                     <span>
-                      Developed intuitive file management interface and
-                      real-time dashboard streamlining data operations
+                      Deployed and managed Kubernetes applications for 40+ PRD
+                      applications, ensuring 95% uptime and scalability
                     </span>
                   </li>
                   <li className="flex items-start text-gray-300">
@@ -60,14 +60,13 @@ const Experience = () => (
 
               <div>
                 <h4 className="text-xl text-gray-300 mb-4">
-                  Cloud Infrastructure Management
+                  Cloud Implementatoin
                 </h4>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-300">
                     <span className="text-purple-400 mr-2 mt-1">•</span>
                     <span>
-                      Developed and managed CI/CD pipelines in Azure DevOps,
-                      cutting deployment time by 30%
+                      Optimized monitoring using Azure App Insights & KQL,
                     </span>
                   </li>
                   <li className="flex items-start text-gray-300">
@@ -75,6 +74,13 @@ const Experience = () => (
                     <span>
                       Implemented ETL pipelines (ADF, Logic Apps) to improve
                       data efficiency by 20%
+                    </span>
+                  </li>
+                  <li className="flex items-start text-gray-300">
+                    <span className="text-purple-400 mr-2 mt-1">•</span>
+                    <span>
+                      Integrated Apache Kafka with Azure Event Hubs for
+                      real-time data ingestion, handling 20,000 messages/sec
                     </span>
                   </li>
                 </ul>
@@ -101,28 +107,28 @@ const Experience = () => (
 
               <div className="mb-6">
                 <h4 className="text-xl text-gray-300 mb-4">
-                  Enterprise Application Platform
+                  Quality Assurance and Leadership
                 </h4>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-300">
                     <span className="text-purple-400 mr-2 mt-1">•</span>
                     <span>
-                      Consolidated multiple apps into single .NET & React
-                      webapp, reducing maintenance costs by 35%
+                      Automated report generation using Python & ODBC, reducing
+                      report time from 2.5 hours to 10 minutes
                     </span>
                   </li>
                   <li className="flex items-start text-gray-300">
                     <span className="text-purple-400 mr-2 mt-1">•</span>
                     <span>
-                      Built React UI with memoization optimization, reducing
-                      load times by 30%
+                      Resolved 50+ P1 and P2 incidents using ServiceNow,
+                      achieving a 98% SLA compliance rate
                     </span>
                   </li>
                   <li className="flex items-start text-gray-300">
                     <span className="text-purple-400 mr-2 mt-1">•</span>
                     <span>
-                      Integrated Apache Kafka with Azure Events Hubs for
-                      real-time data ingestion, handling 20,000 messages/sec
+                      Conducted root cause analysis for recurring issues,
+                      leading to a 15% reduction in incident recurrence
                     </span>
                   </li>
                 </ul>
@@ -142,7 +148,8 @@ const Experience = () => (
                     <span className="text-purple-400 mr-2 mt-1">•</span>
                     <span>
                       Created comprehensive technical documentation and Azure
-                      Dashboards for timely insights
+                      Dashboards for timely insights, improving team efficiency
+                      by 25%
                     </span>
                   </li>
                 </ul>
