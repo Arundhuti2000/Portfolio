@@ -53,19 +53,18 @@ const allSkills = Array.from(
 const Skills = () => (
   <section
     id="skills"
-    className="py-20 bg-gradient-to-b from-gray-950 to-black"
+    className="h-full bg-gradient-to-b from-gray-950 to-black py-20 md:py-28 lg:py-36"
   >
-    <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-10">
       <FadeInSection>
-        <h2 className="text-4xl font-bold text-center mb-16 text-white-400">
+        <h2 className="mb-16 text-center font-bold uppercase max-sm:text-4xl sm:text-4xl md:text-5xl lg:text-6xl text-gradient-white">
           Skills
         </h2>
       </FadeInSection>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-11 items-center justify-items-center">
         {allSkills.map((skill, idx) => (
           <FadeInSection key={`skill-${skill.name}`}>
-            <div className="bg-gray-900/80 bg-opacity-70 w-32 h-32 rounded-lg flex flex-col items-center justify-center p-4 border border-gray-800 transition-all duration-300 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20">
+            <div className="bg-gray-900/80 bg-opacity-70 w-32 h-32 rounded-lg flex flex-col items-center justify-center border border-gray-800 transition-all duration-300 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20">
               <div className="h-20 w-20 flex items-center justify-center">
                 <img
                   src={skill.logo}
@@ -74,8 +73,8 @@ const Skills = () => (
                 />
               </div>
               {/* <p className="text-center text-sm font-medium text-gray-300">
-                {skill.name}
-              </p> */}
+                  {skill.name}
+                </p> */}
             </div>
           </FadeInSection>
         ))}
