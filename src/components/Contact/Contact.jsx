@@ -8,7 +8,7 @@ const Contact = () => (
   >
     <div className="max-w-7xl mx-auto px-4">
       <FadeInSection>
-        <h2 className="text-4xl font-bold text-center mb-16 text-white-400">
+        <h2 className="text-5xl md:text-6xl font-bold text-center mb-24 text-white">
           Contact
         </h2>
         <div className="max-w-2xl mx-auto">
