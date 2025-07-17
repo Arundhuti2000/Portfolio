@@ -168,6 +168,20 @@ const TypewriterText = ({ text, delay = 100 }) => {
   return <span>{displayText}</span>
 }
 
+const handleDownloadResume = () => {
+  // Optional: Track download with analytics
+  // gtag('event', 'download', { file_name: 'resume' });
+  
+  // Create download link
+  const link = document.createElement('a');
+  link.href = '/resume/Arundhati_Das_Resume.pdf';
+  link.download = 'Arundhati_Das_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
 export default function Hero() {
   const [showContent, setShowContent] = useState(false)
 
@@ -259,7 +273,10 @@ export default function Hero() {
                 >
                   View My Work
                 </button>
-                <button className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+                <button 
+                  className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+                  onClick={handleDownloadResume}
+                >
                   Download Resume
                 </button>
               </div>
