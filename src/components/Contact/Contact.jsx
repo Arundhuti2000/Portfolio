@@ -16,18 +16,18 @@ const Contact = () => (
             <input
               type="text"
               placeholder="Name"
-              className="w-full p-2 bg-gray-800 border border-purple-400/20 rounded transition-all duration-300 focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/50"
+              className="w-full p-2 bg-gray-800 border border-blue-400/20 rounded transition-all duration-300 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400/50"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full p-2 bg-gray-800 border border-purple-400/20 rounded transition-all duration-300 focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/50"
+              className="w-full p-2 bg-gray-800 border border-indigo-400/20 rounded transition-all duration-300 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/50"
             />
             <textarea
               placeholder="Message"
-              className="w-full p-2 bg-gray-800 border border-purple-400/20 rounded h-32 transition-all duration-300 focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/50"
+              className="w-full p-2 bg-gray-800 border border-cyan-400/20 rounded h-32 transition-all duration-300 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
             />
-            <button className="w-full bg-purple-500 text-white py-2 rounded hover:bg-purple-600 transition-colors duration-300">
+            <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors duration-300">
               Send Message
             </button>
           </form>

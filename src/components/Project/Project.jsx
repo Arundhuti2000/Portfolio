@@ -107,14 +107,14 @@ const Projects = () => {
                   {/* Content Section */}
                   <div className="lg:w-1/2 p-8">
                     <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-2xl text-purple-400 font-semibold">
+                      <h3 className="text-2xl text-blue-400 font-semibold">
                         {project.title}
                       </h3>
                       <a
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-purple-400 transition-colors"
+                        className="text-gray-300 hover:text-cyan-400 transition-colors"
                         aria-label={`View ${project.title} on GitHub`}
                       >
                         <FaGithub size={24} />
@@ -126,7 +126,7 @@ const Projects = () => {
                     </p>
 
                     <div className="space-y-3 mb-6">
-                      <h4 className="text-lg font-medium text-purple-300">
+                      <h4 className="text-lg font-medium text-indigo-300">
                         Key Features:
                       </h4>
                       {project.features.map((feature, idx) => (
@@ -134,21 +134,21 @@ const Projects = () => {
                           key={idx}
                           className="flex items-start text-gray-300"
                         >
-                          <span className="text-purple-400 mr-2 mt-1">✓</span>
+                          <span className="text-indigo-400 mr-2 mt-1">✓</span>
                           <span>{feature}</span>
                         </div>
                       ))}
                     </div>
 
                     <div className="mt-auto">
-                      <h4 className="text-lg font-medium text-purple-300 mb-2">
+                      <h4 className="text-lg font-medium text-cyan-300 mb-2">
                         Technologies:
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech, idx) => (
                           <span
                             key={idx}
-                            className="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-full text-sm"
+                            className="bg-cyan-900/30 text-white-300 px-3 py-1 rounded-full text-sm"
                           >
                             {tech}
                           </span>
