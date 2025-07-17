@@ -64,10 +64,10 @@ const Hero = () => {
               style={{ animationDelay: "2s", animationFillMode: "forwards" }}
             >
               <TypewriterText
-                text="Software Engineer with 3 years of experience in automation, cloud infrastructure, and application deployment.
+                text="Cloud Engineer with 3 years of experience in automation, cloud infrastructure, and application deployment.
  Proficient in designing and maintaining CI/CD pipelines, streamlining deployment processes, and managing
  seamless production releases."
-                delay={15}
+                delay={30}
               />
             </div>
 
