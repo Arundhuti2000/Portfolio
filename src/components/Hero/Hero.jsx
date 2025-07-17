@@ -33,7 +33,7 @@ const RotatingRoles = () => {
   return (
     <div className="font-mono text-lg mb-6">
       <span className="text-gray-400">$</span>
-      <span className="text-white ml-2">whoami</span>
+      <span className="text-green-400 ml-2">whoami</span>
       <span className="text-gray-400 mx-2">|</span>
       <span
         className={`transition-all duration-300 ${
