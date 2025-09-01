@@ -312,7 +312,7 @@ export default function Hero() {
                   <Github className="w-5 h-5 text-gray-300 group-hover:text-white" />
                 </a>
                 <a
-                  href="hhttps://learn.microsoft.com/api/credentials/share/en-us/DasArundhati-9201/89A4826F4D452E28?sharingId=6996CBF7339CD0F2"
+                  href="https://learn.microsoft.com/api/credentials/share/en-us/DasArundhati-9201/89A4826F4D452E28?sharingId=6996CBF7339CD0F2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-800/90 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group border border-gray-700/50"
