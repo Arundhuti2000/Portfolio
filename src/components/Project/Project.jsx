@@ -24,7 +24,7 @@ const Projects = () => {
         "Docker",
         "Alembic",
       ],
-      image: "/images/charcha.png",
+      image: "/images/charcha-1.png",
       githubUrl: "https://github.com/Arundhuti2000/Python_SocialMedia",
     },
     {
