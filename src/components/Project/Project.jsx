@@ -5,6 +5,45 @@ import { FaGithub } from "react-icons/fa"; // Make sure to install react-icons
 const Projects = () => {
   const projectsData = [
     {
+      title: "Charcha - Social-Media API",
+      description:
+        "Scalable social media platform built with modern microservices architecture and containerized deployment. Features comprehensive real-time data exchange, secure authentication, and auto-scaling capabilities deployed on Azure Container Apps with optimized resource management and database migration support.",
+      features: [
+        "RESTful API with 15+ endpoints for comprehensive social media functionality",
+        "JWT authentication with secure session management and authorization middleware",
+        "Auto-scaling deployment (0-10 replicas) on Azure Container Apps",
+        "Containerized FastAPI application with optimized Python 3.11-slim base image",
+        "Database migrations using Alembic with version control and rollback capabilities",
+        "Managed PostgreSQL integration with optimal performance tuning",
+      ],
+      technologies: [
+        "FastAPI",
+        "React",
+        "PostgreSQL",
+        "Azure Container Apps",
+        "Docker",
+        "Alembic",
+      ],
+      image: "/images/charcha.png",
+      githubUrl: "https://github.com/Arundhuti2000/Python_SocialMedia",
+    },
+    {
+      title: "Emporia | E-Commerce Platform",
+      description:
+        "Full-stack e-commerce platform featuring comprehensive multi-user workflows supporting Customer, Seller, and Admin roles. Built with modern web technologies and enterprise design patterns, the platform handles real-time cart synchronization, inventory management, and secure transaction processing with automatic rollback capabilities for data consistency.",
+      features: [
+        "Multi-role authentication system (Customer/Seller/Admin) with secure session management",
+        "Real-time cart synchronization and inventory management across user sessions",
+        "Transaction processing system with Command pattern and automatic rollback capabilities",
+        "Repository pattern implementation with abstract interfaces for database-agnostic operations",
+        "RESTful API architecture with comprehensive CRUD operations",
+        "Responsive React TypeScript frontend with modern UI/UX design",
+      ],
+      technologies: ["Python", "Flask", "React", "TypeScript", "MySQL"],
+      image: "/images/emporia.png",
+      githubUrl: "https://github.com/Arundhuti2000/emporia",
+    },
+    {
       title: "GPU Architecture Benchmarking",
       description: "Advanced performance profiling for RTX 30/40 Series GPUs",
       features: ["Performance optimization", "Cache management analysis"],
