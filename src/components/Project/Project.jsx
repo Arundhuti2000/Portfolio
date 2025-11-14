@@ -17,7 +17,7 @@ const Projects = () => {
         "Local asset storage with automatic directory management and sample media downloads",
       ],
       technologies: ["Go", "AWS S3", "CloudFront", "FFMPEG", "SQLite"],
-      image: "/images/tubely.png",
+      image: "/images/Tubely.png",
       githubUrl: "https://github.com/Arundhuti2000/Tubely",
     },
     {
