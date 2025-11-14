@@ -5,6 +5,38 @@ import { FaGithub } from "react-icons/fa"; // Make sure to install react-icons
 const Projects = () => {
   const projectsData = [
     {
+  title: "Tubely - Video Streaming Platform",
+  description:
+    "A full-stack video streaming application built with Golang and modern cloud infrastructure for the Boot.dev course on File Servers and CDNs. Tubely demonstrates implementation of scalable file storage with AWS S3 and global content delivery through CloudFront CDN, featuring video upload, processing, and streaming capabilities with automatic transcoding.",
+  features: [
+    "Video upload and streaming with AWS S3 bucket integration for scalable cloud storage",
+    "CloudFront CDN integration for optimized global content delivery and reduced latency",
+    "Automatic video transcoding and format conversion using FFMPEG",
+    "SQLite database for efficient metadata and asset management",
+    "RESTful API built with Golang for high-performance media operations",
+    "Local asset storage with automatic directory management and sample media downloads",
+  ],
+  technologies: ["Go", "AWS S3", "CloudFront", "FFMPEG", "SQLite"],
+  image: "/images/tubely.png",
+  githubUrl: "https://github.com/Arundhuti2000/Tubely",
+},
+{
+  title: "KodeKloud Streak Extension",
+  description:
+    "A Chrome browser extension designed to enhance the KodeKloud learning experience by tracking and maintaining learning streaks. This productivity tool helps DevOps learners stay motivated and consistent with their studies on the KodeKloud platform, providing visual feedback and streak management features directly in the browser.",
+  features: [
+    "Automatic streak tracking for KodeKloud course completion and lab activities",
+    "Visual streak counter and progress indicators in browser toolbar",
+    "Persistent local storage for maintaining streak data across sessions",
+    "Clean and intuitive user interface integrated with KodeKloud platform",
+    "Notifications and reminders to maintain daily learning streaks",
+    "Chrome extension architecture with manifest V3 compliance",
+  ],
+  technologies: ["JavaScript", "Chrome Extension API", "HTML", "CSS", "Local Storage"],
+  image: "/images/kodekloud-streak.png",
+  githubUrl: "https://github.com/Arundhuti2000/kodekloud-streak",
+}
+    {
       title: "Charcha - Social-Media API",
       description:
         "Scalable social media platform built with modern microservices architecture and containerized deployment. Features comprehensive real-time data exchange, secure authentication, and auto-scaling capabilities deployed on Azure Container Apps with optimized resource management and database migration support.",
