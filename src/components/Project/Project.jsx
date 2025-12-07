@@ -96,6 +96,8 @@ const Projects = () => {
       ],
       image: "/images/charcha-1.png",
       githubUrl: "https://github.com/Arundhuti2000/Python_SocialMedia",
+      liveUrl:
+        "https://ca-social-media.mangodesert-0d3ef58a.eastus.azurecontainerapps.io/docs",
     },
     {
       title: "Emporia | E-Commerce Platform",
