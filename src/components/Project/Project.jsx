@@ -5,6 +5,37 @@ import { FaGithub } from "react-icons/fa"; // Make sure to install react-icons
 const Projects = () => {
   const projectsData = [
     {
+      title: "VaultDrive - Zero-Knowledge Cloud Storage",
+      description:
+        "A full-stack secure file storage application built with Go and React, implementing zero-knowledge encryption architecture. VaultDrive demonstrates enterprise-grade security practices including end-to-end encryption, JWT authentication, and secure file sharing using public key cryptography. The server acts as a blind storage provider with no access to plaintext files or encryption keys. Deployed on Azure Container Apps for scalable, containerized cloud hosting.",
+      features: [
+        "Zero-knowledge architecture with AES-256-GCM encryption - server never sees plaintext files",
+        "Secure user authentication with JWT tokens, refresh tokens, and bcrypt password hashing",
+        "Automatic RSA key pair generation for each user during registration",
+        "Encrypted file upload and download with metadata storage (IV, salt) for client-side decryption",
+        "Secure file sharing system using wrapped keys and public key cryptography",
+        "Instant access control with ability to revoke shared file permissions",
+        "RESTful API with proper error handling and validation",
+        "Type-safe database queries using SQLC and PostgreSQL",
+        "Responsive UI with modern design using Tailwind CSS and shadcn/ui components",
+        "Containerized deployment on Azure Container Apps with CI/CD pipeline via GitHub Actions",
+      ],
+      technologies: [
+        "Go",
+        "PostgreSQL",
+        "SQLC",
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "JWT",
+        "Docker",
+        "Azure Container Apps",
+      ],
+      image: "/vault.svg",
+      githubUrl: "https://github.com/Pranay0205/VaultDrive",
+    },
+    {
       title: "Tubely - Video Streaming Platform",
       description:
         "A full-stack video streaming application built with Golang and modern cloud infrastructure for the Boot.dev course on File Servers and CDNs. Tubely demonstrates implementation of scalable file storage with AWS S3 and global content delivery through CloudFront CDN, featuring video upload, processing, and streaming capabilities with automatic transcoding.",
