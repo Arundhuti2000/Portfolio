@@ -32,7 +32,7 @@ const Projects = () => {
         "Docker",
         "Azure Container Apps",
       ],
-      image: "/vault.png",
+      image: "/images/vault.png",
       githubUrl: "https://github.com/Pranay0205/VaultDrive",
       liveUrl: "https://proud-dune-0024f9810.3.azurestaticapps.net/",
     },
@@ -265,6 +265,18 @@ const Projects = () => {
                           </span>
                         ))}
                       </div>
+                      {project.liveUrl && (
+                        <div className="mt-4">
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
+                          >
+                            Live Demo <span className="ml-2">→</span>
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
