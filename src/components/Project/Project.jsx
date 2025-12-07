@@ -32,7 +32,7 @@ const Projects = () => {
         "Docker",
         "Azure Container Apps",
       ],
-      image: "/vault.svg",
+      image: "/vault.png",
       githubUrl: "https://github.com/Pranay0205/VaultDrive",
     },
     {
