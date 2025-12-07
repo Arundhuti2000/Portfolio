@@ -34,6 +34,7 @@ const Projects = () => {
       ],
       image: "/vault.png",
       githubUrl: "https://github.com/Pranay0205/VaultDrive",
+      liveUrl: "https://proud-dune-0024f9810.3.azurestaticapps.net/",
     },
     {
       title: "Tubely - Video Streaming Platform",
