@@ -175,6 +175,7 @@ const Projects = () => {
       technologies: ["React", "JavaScript", "CSS"],
       video: "/images/biryani-demo.mp4", // Add your video path here, if you have it
       githubUrl: "https://github.com/Arundhuti2000/Biriyani-Recipe",
+      liveUrl: "https://biriyani-recipe.arundhatidas.com/",
     },
   ];
 
