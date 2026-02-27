@@ -117,10 +117,11 @@ const About = () => {
                   {/* Add a personal photo here if you have one, or a stylistic abstract image */}
                   <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-white/5 border border-white/10 relative group">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
-                    {/* Placeholder for personal image */}
-                    <div className="w-full h-full flex items-center justify-center text-white/20 bg-neutral-900">
-                      [Your Photo Here]
-                    </div>
+                    <img
+                      src="/images/me.jpeg"
+                      alt="Profile"
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
                   </div>
                   {/* Decorative elements */}
                   <div className="absolute -z-10 top-[-20px] right-[-20px] w-24 h-24 bg-purple-500/20 rounded-full blur-2xl" />
