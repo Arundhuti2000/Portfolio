@@ -39,16 +39,22 @@ const RotatingRoles = () => {
   }, []);
 
   return (
-    <div className="font-mono text-lg mb-6 flex items-center">
-      <span className="text-white/40 mr-2">{`>`}</span>
-      <span
-        className={`transition-all duration-300 font-medium tracking-wide ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
-        } ${roles[currentIndex].color}`}
-      >
-        {roles[currentIndex].text}
-      </span>
-      <span className="animate-pulse text-white ml-1">_</span>
+    <div className="font-mono text-lg mb-6 flex flex-col items-center lg:items-start gap-2">
+      <div className="flex items-center text-white/50 text-sm">
+        <span className="mr-2">$</span>
+        <span>whoami</span>
+      </div>
+      <div className="flex items-center">
+        <span className="text-white/40 mr-2">{`>`}</span>
+        <span
+          className={`transition-all duration-300 font-medium tracking-wide ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+          } ${roles[currentIndex].color}`}
+        >
+          {roles[currentIndex].text}
+        </span>
+        <span className="animate-pulse text-white ml-1">_</span>
+      </div>
     </div>
   );
 };
