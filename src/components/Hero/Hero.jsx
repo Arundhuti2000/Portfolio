@@ -10,7 +10,7 @@ import {
   Database,
   Github,
   Linkedin,
-  FileText
+  FileText,
 } from "lucide-react";
 import DynamicBackground from "../Utilities/DynamicBackground";
 
@@ -90,10 +90,9 @@ const AzureTerminal = () => {
     <div className="relative font-mono text-sm max-w-2xl mx-auto md:mx-0">
       {/* Glass Container */}
       <div className="bg-[#0a0a0a]/80 backdrop-blur-xl rounded-xl p-6 border border-white/10 shadow-[0_0_50px_-10px_rgba(59,130,246,0.15)] relative overflow-hidden group">
-        
         {/* Glow Effects */}
         <div className="absolute top-0 right-0 w-[150px] h-[150px] bg-blue-500/10 rounded-full blur-[80px] -z-10 group-hover:bg-blue-500/20 transition-all duration-700" />
-        
+
         <div className="flex items-center justify-between mb-4 border-b border-white/5 pb-4">
           <div className="flex items-center gap-2">
             <div className="flex gap-2">
@@ -107,7 +106,7 @@ const AzureTerminal = () => {
           </div>
           <span className="text-white/20 text-xs">bot@azure-cloud: ~</span>
         </div>
-        
+
         <div className="space-y-3 min-h-[300px] font-mono text-xs md:text-sm">
           {lines.map((line, index) => (
             <div
@@ -119,7 +118,9 @@ const AzureTerminal = () => {
               }`}
             >
               {line.startsWith("✓") ? (
-                <span className="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]">{line}</span>
+                <span className="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]">
+                  {line}
+                </span>
               ) : (
                 <div className="flex">
                   <span className="text-blue-400 mr-2">➜</span>
@@ -149,11 +150,16 @@ const Hero = () => {
   };
 
   return (
-    <div id="home" className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden pt-20">
-      
+    <div
+      id="home"
+      className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden pt-20"
+    >
       {/* Background Ambience */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-purple-900/20 rounded-full blur-[120px] opacity-40 mix-blend-screen animate-pulse" style={{ animationDuration: '4s' }} />
+        <div
+          className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-purple-900/20 rounded-full blur-[120px] opacity-40 mix-blend-screen animate-pulse"
+          style={{ animationDuration: "4s" }}
+        />
         <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[100px] opacity-40 mix-blend-screen" />
         <div className="absolute top-[40%] right-[20%] w-[300px] h-[300px] bg-cyan-500/10 rounded-full blur-[80px] opacity-30" />
       </div>
@@ -161,23 +167,23 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
-            
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
               Hi, I'm <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 animate-gradient-x">
                 Arundhati Das
               </span>
             </h1>
-            
+
             <div className="flex flex-col items-center lg:items-start">
-               <RotatingRoles />
+              <RotatingRoles />
             </div>
 
             <p className="text-lg text-gray-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              I architect scalable cloud infrastructure and build automated DevOps pipelines. 
-              Turning complex problems into elegant, reliable solutions.
+              I architect scalable cloud infrastructure and build automated
+              DevOps pipelines. Turning complex problems into elegant, reliable
+              solutions.
             </p>
-            
+
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
               <a
                 href="#projects"
@@ -195,37 +201,37 @@ const Hero = () => {
             </div>
 
             <div className="pt-8 flex items-center justify-center lg:justify-start gap-6">
-                <a
-                  href="https://github.com/Arundhuti2000"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-110 border border-white/10 hover:border-white/20"
-                >
-                  <Github className="w-6 h-6 text-white/70 hover:text-white" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/arundhatidas76/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-110 border border-white/10 hover:border-white/20"
-                >
-                  <Linkedin className="w-6 h-6 text-white/70 hover:text-white" />
-                </a>
-                <a
-                   href="https://learn.microsoft.com/api/credentials/share/en-us/DasArundhati-9201/89A4826F4D452E28?sharingId=6996CBF7339CD0F2"
-                   target="_blank"
-                   rel="noopener noreferrer" 
-                   className="p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-110 border border-white/10 hover:border-white/20"
-                >
-                  <Cloud className="w-6 h-6 text-white/70 hover:text-white" />
-                </a>
+              <a
+                href="https://github.com/Arundhuti2000"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-110 border border-white/10 hover:border-white/20"
+              >
+                <Github className="w-6 h-6 text-white/70 hover:text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/arundhatidas76/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-110 border border-white/10 hover:border-white/20"
+              >
+                <Linkedin className="w-6 h-6 text-white/70 hover:text-white" />
+              </a>
+              <a
+                href="https://learn.microsoft.com/api/credentials/share/en-us/DasArundhati-9201/89A4826F4D452E28?sharingId=6996CBF7339CD0F2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-110 border border-white/10 hover:border-white/20"
+              >
+                <Cloud className="w-6 h-6 text-white/70 hover:text-white" />
+              </a>
             </div>
           </div>
-          
+
           <div className="w-full lg:w-1/2 perspective-1000">
-             <div className="relative transform transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
-                 <AzureTerminal />
-             </div>
+            <div className="relative transform transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
+              <AzureTerminal />
+            </div>
           </div>
         </div>
       </div>
