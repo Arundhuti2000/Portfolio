@@ -161,15 +161,11 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-white/60 backdrop-blur-md">
-              <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              Available for new projects
-            </div>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
-              Building the <br />
+              Hi, I'm <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 animate-gradient-x">
-                Cloud Future
+                Arundhati Das
               </span>
             </h1>
             
