@@ -8,6 +8,10 @@ const skillCategories = [
       { name: "C#/.NET", logo: "/images/csharp.png" },
       { name: "Python", logo: "/images/python.png" },
       { name: "JavaScript", logo: "/images/javascript.png" },
+      {
+        name: "Golang",
+        logo: "/images/353-3536792_go-golang-logo-png-removebg-preview.png",
+      },
       { name: "HTML", logo: "/images/html.png" },
       { name: "CSS", logo: "/images/css.png" },
     ],
@@ -18,6 +22,7 @@ const skillCategories = [
       { name: "Azure", logo: "/images/azure.png" },
       { name: "AWS", logo: "/images/aws.png" },
       { name: "Kubernetes", logo: "/images/kubernetes.png" },
+      { name: "Docker", logo: "/images/docker-logo-removebg-preview.png" },
       { name: "Azure DevOps", logo: "/images/devops.png" },
     ],
   },
@@ -37,6 +42,13 @@ const skillCategories = [
     skills: [
       { name: "MySQL", logo: "/images/mysql.png" },
       { name: "CassandraDB", logo: "/images/cassandra.png" },
+    ],
+  },
+  {
+    title: "Messaging & Streaming",
+    skills: [
+      { name: "RabbitMQ", logo: "/images/rabbitmq-removebg-preview.png" },
+      { name: "Kafka", logo: "/images/kafka-removebg-preview.png" },
     ],
   },
 ];
