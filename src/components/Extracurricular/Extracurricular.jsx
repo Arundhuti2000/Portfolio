@@ -1,6 +1,68 @@
 import FadeInSection from "../Utilities/FadeInSection";
-import { Leaf, Heart, Monitor } from "lucide-react";
-import React from "react";
+import { Leaf, Heart, Monitor, ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState } from "react";
+
+const ImageCarousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  if (!images || images.length === 0) return null;
+
+  const nextSlide = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  return (
+    <div className="relative w-full h-48 mt-6 rounded-lg overflow-hidden group/carousel">
+      <div
+        className="w-full h-full flex transition-transform duration-500 ease-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Slide ${index + 1}`}
+            className="w-full h-full object-cover flex-shrink-0"
+          />
+        ))}
+      </div>
+
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={prevSlide}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full opacity-0 group-hover/carousel:opacity-100 transition-opacity hover:bg-black/70"
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-1 rounded-full opacity-0 group-hover/carousel:opacity-100 transition-opacity hover:bg-black/70"
+          >
+            <ChevronRight size={20} />
+          </button>
+
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+            {images.map((_, idx) => (
+              <div
+                key={idx}
+                className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                  idx === currentIndex ? "bg-white" : "bg-white/50"
+                }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
 
 const Extracurricular = () => {
   const activities = [
@@ -13,16 +75,22 @@ const Extracurricular = () => {
         "Participated in local beach cleanup drives to preserve coastal ecosystems and reduce plastic pollution. Collaborated with community members to remove waste and raise awareness about environmental sustainability.",
       icon: Leaf,
       color: "from-green-400 to-emerald-600",
+      images: ["/images/BeachCleanup-1.jpeg", "/images/BeachCleanup-2.jpeg"],
     },
     {
       id: 2,
       title: "Community Service",
       organization: "Volunteer",
-      date: "Ongoing",
+      date: "2025",
       description:
-        "Engaged in various community service initiatives, supporting local shelters and food banks. Focused on giving back to the community and helping those in need.",
+        "Engaged in various community service initiatives, supporting local shelters and food banks. Focused on giving back to the community and helping those in need. Led holiday card making sessions for dining service and facilities staff to spread joy.",
       icon: Heart,
       color: "from-red-400 to-pink-600",
+      images: [
+        "/images/ChristmasCard-1.jpeg",
+        "/images/ChristmasCard-2.jpeg",
+        "/images/ChristmasCard-3.jpeg",
+      ],
     },
     // Add more activities as needed, e.g. Tech Club, Hackathon mentoring etc.
     // {
@@ -95,6 +163,10 @@ const Extracurricular = () => {
                     <p className="text-white/60 leading-relaxed text-base flex-grow">
                       {activity.description}
                     </p>
+
+                    {activity.images && activity.images.length > 0 && (
+                      <ImageCarousel images={activity.images} />
+                    )}
                   </div>
                 </div>
               </FadeInSection>
