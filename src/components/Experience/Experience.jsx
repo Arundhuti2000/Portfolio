@@ -26,7 +26,7 @@ const Experience = () => {
       id: 2,
       title: "Software Engineer",
       company: "ServiceNow",
-      duration: "Mar 2026 - Aug 2026",
+      duration: "Mar 2026 - Jun 2026",
       location: "New Jersey, USA",
       type: "Full-time",
       color: "green",
