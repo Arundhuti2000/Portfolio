@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FadeInSection from "../Utilities/FadeInSection";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaFilePdf } from "react-icons/fa";
 import { X } from "lucide-react";
 
 const Projects = () => {
@@ -46,6 +46,7 @@ const Projects = () => {
       image: "/images/chronos.jpg",
       githubUrl: "https://github.com/Arundhuti2000/Chronos",
       liveUrl: "https://www.youtube.com/watch?v=vJrRaeRQz_M",
+      reportUrl: "/reports/Chronos_Project_Report_ArundhatiDas.pdf",
       color: "from-amber-600 to-orange-500",
     },
     {
@@ -414,6 +415,17 @@ const Projects = () => {
                     >
                       <FaExternalLinkAlt size={16} />{" "}
                       <span className="text-sm">Live Demo</span>
+                    </a>
+                  )}
+                  {activeProject.reportUrl && (
+                    <a
+                      href={activeProject.reportUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 min-w-[140px] flex items-center justify-center gap-2 px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-xl font-medium transition-colors"
+                    >
+                      <FaFilePdf size={16} />{" "}
+                      <span className="text-sm">Project Report</span>
                     </a>
                   )}
                 </div>

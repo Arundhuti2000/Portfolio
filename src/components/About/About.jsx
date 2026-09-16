@@ -11,7 +11,7 @@ import {
   Heart,
   Cloud,
 } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaFilePdf } from "react-icons/fa";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("story");
@@ -282,7 +282,7 @@ const About = () => {
                   Chronos.
                 </p>
 
-                <div className="flex justify-center gap-4 mb-8">
+                <div className="flex flex-wrap justify-center gap-4 mb-8">
                   <a
                     href="https://github.com/Arundhuti2000/Chronos"
                     target="_blank"
@@ -300,6 +300,15 @@ const About = () => {
                   >
                     <ExternalLink size={18} />
                     Watch Demo
+                  </a>
+                  <a
+                    href="/reports/Chronos_Project_Report_ArundhatiDas.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2 bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/50 rounded-full text-white font-medium transition-all"
+                  >
+                    <FaFilePdf size={18} />
+                    Project Report
                   </a>
                 </div>
 
