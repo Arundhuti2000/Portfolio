@@ -282,6 +282,21 @@ const About = () => {
                   Chronos.
                 </p>
 
+                <p className="text-gray-300 mb-8 leading-relaxed">
+                  If you want to dig into how the game is built, including its
+                  architecture, quest flow, dialogue system, and codex, read
+                  the{" "}
+                  <a
+                    href="/reports/Chronos_Project_Report_ArundhatiDas.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-400 hover:text-purple-300 font-medium transition-colors"
+                  >
+                    project report
+                  </a>
+                  .
+                </p>
+
                 <div className="flex flex-wrap justify-center gap-4 mb-8">
                   <a
                     href="https://github.com/Arundhuti2000/Chronos"
