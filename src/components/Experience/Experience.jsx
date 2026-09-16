@@ -9,6 +9,40 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      title: "Software Engineer",
+      company: "Meta",
+      duration: "Aug 2026 - Present",
+      location: "New Jersey, USA",
+      type: "Full-time",
+      color: "blue",
+      logo: "/images/meta.svg",
+      points: [
+        "Onboarded onto internal AI data pipeline architectures, reviewing documentation, Python codebases, and development workflows",
+        "Writing unit tests for data validation and processing scripts within internal AI data pipeline workflows",
+        "Picking up sprint tickets to refactor script components, improve test coverage, and participate in PR review and merge workflows",
+      ],
+    },
+    {
+      id: 2,
+      title: "Software Engineer",
+      company: "ServiceNow",
+      duration: "Mar 2026 - Aug 2026",
+      location: "New Jersey, USA",
+      type: "Full-time",
+      color: "green",
+      logo: "/images/servicenow.png",
+      points: [
+        "Developed backend features and REST APIs in Python using FastAPI for cloud-based enterprise services on ServiceNow's SaaS platform",
+        "Built internal LLM-powered engineering tooling with tool/function calling to inspect technical context, execute controlled actions, and iteratively refine outputs",
+        "Built a RAG knowledge-search service with document ingestion, semantic chunking, and embedding-based retrieval for internal technical knowledge",
+        "Implemented prompt and context handling with output validation so AI-generated suggestions could be verified before use in engineering workflows",
+        "Optimized PostgreSQL queries and backend processing logic to improve API performance and reduce response times for customer-facing services",
+        "Contributed to asynchronous workflows using Apache Kafka and message queues, improving inter-service scalability and reliability",
+        "Built containerized services with Docker on Kubernetes, collaborating with SRE teams on reliable deployments and platform stability",
+      ],
+    },
+    {
+      id: 3,
       title: "Software Engineering Analyst — Customer 360",
       company: "Accenture | Client: Chanel",
       duration: "Jul 2022 - Jul 2024",
@@ -28,7 +62,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 2,
+      id: 4,
       title: "Software Engineer Associate",
       company: "Accenture | Client: Loreal",
       duration: "May 2021 - Jun 2022",
@@ -46,7 +80,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 3,
+      id: 5,
       title: "Associate Consultant Intern",
       company: "Capgemini",
       duration: "Jan 2021 - Apr 2021",
@@ -61,7 +95,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 4,
+      id: 6,
       title: "Big Data Intern",
       company: "Celebal Technologies",
       duration: "May 2020 - Jul 2020",

@@ -6,6 +6,49 @@ import { X } from "lucide-react";
 const Projects = () => {
   const projectsData = [
     {
+      title: "Bandobast",
+      subtitle: "Studio OS for Wedding Vendors",
+      description:
+        "A SaaS platform for Indian wedding and event vendors (photographers, decorators, caterers and planners) that replaces Excel sheets, Google Drive and WhatsApp threads with one tool for bookings, teams, expenses, invoicing and client photo delivery.",
+      features: [
+        "Bookings calendar with conflict detection",
+        "Client photo selection & delivery galleries",
+        "GST-ready invoices & quotations with PDF export",
+        "Team directory & kanban task board",
+        "Embeddable public booking widget",
+      ],
+      technologies: [
+        "Go",
+        "Echo",
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Cloudflare R2",
+        "Docker",
+      ],
+      image: "/images/bandobast.png",
+      liveUrl: "https://bandobast.in",
+      color: "from-rose-500 to-cyan-400",
+    },
+    {
+      title: "Chronos",
+      subtitle: "Educational History RPG",
+      description:
+        "An educational adventure game built in Unreal Engine 5.6, inspired by Assassin's Creed Discovery Tours. Players travel through portals into recreated historical worlds, Nabataean Petra and Classical Athens, to gather artifacts and repair a fractured timeline while learning from AI-powered NPCs.",
+      features: [
+        "Hybrid NPC dialogue: scripted + Gemini-powered",
+        "Quest-driven teach, test & advance loop",
+        "Knowledge Points with real consequences",
+        "Codex journal tracking discoveries",
+        "Inventory, item inspection & save system",
+      ],
+      technologies: ["Unreal Engine 5.6", "Blueprints", "Gemini API"],
+      image: "/images/chronos.jpg",
+      githubUrl: "https://github.com/Arundhuti2000/Chronos",
+      liveUrl: "https://www.youtube.com/watch?v=vJrRaeRQz_M",
+      color: "from-amber-600 to-orange-500",
+    },
+    {
       title: "VaultDrive",
       subtitle: "Zero-Knowledge Cloud Storage",
       description:

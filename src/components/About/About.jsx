@@ -11,6 +11,7 @@ import {
   Heart,
   Cloud,
 } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("story");
@@ -255,13 +256,52 @@ const About = () => {
                 </h3>
 
                 <p className="text-gray-300 mb-8 leading-relaxed">
-                  Gaming is where my love for history meets technology. I'm
-                  currently developing an **NPC-powered historical RPG** in
-                  Unreal Engine 5. Inspired by *Assassin's Creed Discovery
-                  Tours*, the project is an experiment in using game mechanics
-                  to teach history-turning static dates and facts into a
-                  playable, interactive world.
+                  Gaming is where my love for history meets technology. I've
+                  built{" "}
+                  <a
+                    href="https://github.com/Arundhuti2000/Chronos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-400 hover:text-purple-300 font-medium transition-colors"
+                  >
+                    Chronos
+                  </a>{" "}
+                  — an <strong>NPC-powered historical RPG</strong> in Unreal
+                  Engine 5.6. Inspired by{" "}
+                  <em>Assassin's Creed Discovery Tours</em>, this project
+                  is an experiment in using game mechanics to teach history,
+                  turning static dates and facts into a playable, interactive
+                  world.
                 </p>
+
+                <p className="text-gray-300 mb-8 leading-relaxed">
+                  The game is built, but it isn't available to the public yet,
+                  as it still needs some polish before a release. You can watch
+                  the demo video below to see it in action. Now that I've
+                  started working full-time, I've stopped active development on
+                  Chronos.
+                </p>
+
+                <div className="flex justify-center gap-4 mb-8">
+                  <a
+                    href="https://github.com/Arundhuti2000/Chronos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-white font-medium transition-all"
+                  >
+                    <FaGithub size={18} />
+                    View on GitHub
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=vJrRaeRQz_M"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2 bg-red-600/20 hover:bg-red-600/30 border border-red-600/50 rounded-full text-white font-medium transition-all"
+                  >
+                    <ExternalLink size={18} />
+                    Watch Demo
+                  </a>
+                </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-left">
                   {[
