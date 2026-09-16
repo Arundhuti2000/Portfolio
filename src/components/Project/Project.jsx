@@ -50,6 +50,22 @@ const Projects = () => {
       color: "from-amber-600 to-orange-500",
     },
     {
+      title: "Kawai Agent",
+      subtitle: "AI Coding Agent",
+      description:
+        "An AI coding agent built from scratch in Python on the Google Gemini API. Given a request, the model plans a sequence of function calls to list, read, write, and run files, then iterates on the results in an agent loop until the task is done. It has both a CLI and a web chat interface.",
+      features: [
+        "Gemini function calling with tool schemas",
+        "Agent loop capped at 20 iterations",
+        "File tools sandboxed to a working directory",
+        "Python execution with a 30s timeout",
+        "Flask API + React chat UI",
+      ],
+      technologies: ["Python", "Gemini API", "Flask", "React", "Vite"],
+      githubUrl: "https://github.com/Arundhuti2000/mykawaiagent",
+      color: "from-pink-500 to-violet-500",
+    },
+    {
       title: "VaultDrive",
       subtitle: "Zero-Knowledge Cloud Storage",
       description:

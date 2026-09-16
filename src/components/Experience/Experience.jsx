@@ -33,9 +33,7 @@ const Experience = () => {
       logo: "/images/servicenow.png",
       points: [
         "Developed backend features and REST APIs in Python using FastAPI for cloud-based enterprise services on ServiceNow's SaaS platform",
-        "Built internal LLM-powered engineering tooling with tool/function calling to inspect technical context, execute controlled actions, and iteratively refine outputs",
-        "Built a RAG knowledge-search service with document ingestion, semantic chunking, and embedding-based retrieval for internal technical knowledge",
-        "Implemented prompt and context handling with output validation so AI-generated suggestions could be verified before use in engineering workflows",
+        "Fixed bugs and made incremental improvements to existing internal LLM-powered engineering tooling",
         "Optimized PostgreSQL queries and backend processing logic to improve API performance and reduce response times for customer-facing services",
         "Contributed to asynchronous workflows using Apache Kafka and message queues, improving inter-service scalability and reliability",
         "Built containerized services with Docker on Kubernetes, collaborating with SRE teams on reliable deployments and platform stability",
